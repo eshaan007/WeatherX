@@ -5,4 +5,4 @@ To run on local system, Open the Project directory and type these 2 commands:-
 
 ### `npm start`
 
-Made with :heart: by Eshaan Khurana
+< Made with :heart: by Eshaan Khurana >
