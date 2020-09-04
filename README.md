@@ -1,4 +1,4 @@
-# Weather App Task 
+# Weather-X
 
 To run on local system, Open the Project directory and type these 2 commands:-
 ### `npm install`
