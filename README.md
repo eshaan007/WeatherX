@@ -1,4 +1,6 @@
-# Weather-X
+<h1 align="center">Weather-X</h1>
+<p align="center"><b>Weather is Yours to know! ⛅️</b></p>
+
 
 - Developed this App to search Weather Conditions in **ANY CITY**. 
 - Used OpenWeatherAPI's functionality and integrated it into ReactJS. 
