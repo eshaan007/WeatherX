@@ -1,10 +1,17 @@
 # Weather-X
 
-Open-Weather API used to import The Weather of **ANY CITY !!**
+- Developed this App to search Weather Conditions in **ANY CITY**. 
+- Used OpenWeatherAPI's functionality and integrated it into ReactJS. 
+- Beautified using *Bootstrap CSS Framework*.
 
-To run on local system, Open the Project directory and type these 2 commands:-
-### `npm install`
+### Installation Guide
+1. Open the terminal on your PC
+2. Clone the repository `git clone https://github.com/eshaan007/WeatherX.git`
+3. Go inside the project directory
+4. Install the dependencies using `npm install`
+5. Start the application with `npm start`
 
-### `npm start`
+##### The project has started on `localhost:3000` !!
 
-< Made with :heart: by Eshaan Khurana >
+---
+<p align="center"> Made with ❤️ by <a href="https://eshaankhurana.com">Eshaan Khurana</a></p>
