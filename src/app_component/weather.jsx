@@ -34,8 +34,6 @@ const Weather = props => {
   );
 };
 
-export default Weather;
-
 function maxminTemp(min, max) {
   if (max && min) {
     return (
@@ -46,3 +44,5 @@ function maxminTemp(min, max) {
     );
   }
 }
+
+export default Weather;
