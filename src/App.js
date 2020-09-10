@@ -73,10 +73,11 @@ class App extends React.Component {
     return cell;
   }
 
-  // preventDefault() is called with in order to prevent getWeather() from getting called by Default
+  // event handler for onSubmit button in the form component
   getWeather = async e => {
     e.preventDefault();
 
+    // Retrieve the value in 'city' from the Textbox
     const city = e.target.elements.city.value;
 
     // When city is entered, the data is fetched and retrieved from the OpenWeatherAPI
@@ -88,7 +89,7 @@ class App extends React.Component {
       // The response received is stored in the form of Standard JSON format 
       const response = await api_call.json();
 
-      // setState function called to fill in the responses in their respective field
+      // Values are retrieved from the API and Specified to the state
       this.setState({
         city: `${response.name}, ${response.sys.country}`,
         main: response.weather[0].main,
@@ -100,7 +101,7 @@ class App extends React.Component {
         error: false
       });
 
-      // seting icons
+      // Icons are set
       this.get_WeatherIcon(this.weatherIcon, response.weather[0].id);
 
       // Response is console logged to check if it is working, if not, then the error function is thrown
