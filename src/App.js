@@ -12,6 +12,8 @@ const Api_Key = "2244550d53377cca8d65c736320c9691";
 class App extends React.Component {
   constructor() {
     super();
+
+    // setting state to empty initially
     this.state = {
       city: undefined,
       icon: undefined,
@@ -24,6 +26,7 @@ class App extends React.Component {
       error: false
     };  
 
+    // setting weather to their respective icons
     this.weatherIcon = {
       Thunderstorm: "wi-thunderstorm",
       Drizzle: "wi-sleet",
@@ -35,6 +38,7 @@ class App extends React.Component {
     };
   }
 
+  // Switch statements specified to get the specific icon for that specific weather condition 
   get_WeatherIcon(icons, rangeId) {
     switch (true) {
       case rangeId >= 200 && rangeId < 232:
@@ -63,23 +67,28 @@ class App extends React.Component {
     }
   }
 
+  // Converting the Temperature to the default - Celsius
   calCelsius(temp) {
     let cell = Math.floor(temp - 273.15);
     return cell;
   }
 
+  // preventDefault() is called with in order to prevent getWeather() from getting called by Default
   getWeather = async e => {
     e.preventDefault();
 
     const city = e.target.elements.city.value;
 
+    // When city is entered, the data is fetched and retrieved from the OpenWeatherAPI
     if (city) {
       const api_call = await fetch(
         `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api_Key}`
       );
 
+      // The response received is stored in the form of Standard JSON format 
       const response = await api_call.json();
 
+      // setState function called to fill in the responses in their respective field
       this.setState({
         city: `${response.name}, ${response.sys.country}`,
         main: response.weather[0].main,
@@ -94,6 +103,7 @@ class App extends React.Component {
       // seting icons
       this.get_WeatherIcon(this.weatherIcon, response.weather[0].id);
 
+      // Response is console logged to check if it is working, if not, then the error function is thrown
       console.log(response);
     } else {
       this.setState({
