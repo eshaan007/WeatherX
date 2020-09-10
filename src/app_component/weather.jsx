@@ -1,6 +1,7 @@
 import React from "react";
 import "./weather.css";
 
+//stateless function called 
 const Weather = props => {
   return (
     <div className="container text-light">
@@ -10,7 +11,7 @@ const Weather = props => {
           <i className={`wi ${props.weatherIcon} display-1`} />
         </h5>
 
-        {/* Get Celsius */}
+        {/* Get Celsius */} 
         {props.temp_celsius ? (
           <h1 className="py-2">Temperature : {props.temp_celsius}&deg; C</h1>
         ) : null}

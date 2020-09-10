@@ -1,6 +1,7 @@
 import React from "react";
 import "./form.css";
 
+//stateless function called 
 const Form = props => {
   return (
     <div className="container h-100">

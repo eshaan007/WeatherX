@@ -4,7 +4,7 @@ import Form from "./app_component/form";
 import Weather from "./app_component/weather";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// git project https://github.com/erikflowers/weather-icons
+// git project https://github.com/eshaan007/WeatherX
 import "weather-icons/css/weather-icons.css";
 
 const Api_Key = "2244550d53377cca8d65c736320c9691";
@@ -71,7 +71,6 @@ class App extends React.Component {
   getWeather = async e => {
     e.preventDefault();
 
-    // const country = e.target.elements.country.value;
     const city = e.target.elements.city.value;
 
     if (city) {
