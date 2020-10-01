@@ -7,9 +7,9 @@
 - Beautified using *Bootstrap CSS Framework*.
 
 ### Installation Guide
-1. Open the terminal on your PC
+1. Open the terminal or git bash on your PC.
 2. Clone the repository `git clone https://github.com/eshaan007/WeatherX.git`
-3. Go inside the project directory
+3. Go inside the project directory.
 4. Install the dependencies using `npm install`
 5. Start the application with `npm start`
 
