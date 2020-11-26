@@ -10,5 +10,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(17, 16, 16);
+}
+
+.App-Body {
+  /* background-color: rgb(255, 255, 255); */
+  background-color: linear-gradient(black, white);
+}
+
+.heading {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
 }

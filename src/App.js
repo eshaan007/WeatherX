@@ -115,17 +115,20 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Form loadweather={this.getWeather} error={this.state.error} />
-        <Weather
-          cityname={this.state.city}
-          weatherIcon={this.state.icon}
-          temp_celsius={this.state.celsius}
-          temp_max={this.state.temp_max}
-          temp_min={this.state.temp_min}
-          description={this.state.description}
-          wind_speed={this.state.wind_speed}
-        />
+      <div className="App-Body">
+        <h1 className="heading"> WeatherX </h1>
+        <div className="App">
+          <Form loadweather={this.getWeather} error={this.state.error} />
+          <Weather
+            cityname={this.state.city}
+            weatherIcon={this.state.icon}
+            temp_celsius={this.state.celsius}
+            temp_max={this.state.temp_max}
+            temp_min={this.state.temp_min}
+            description={this.state.description}
+            wind_speed={this.state.wind_speed}
+          />
+        </div>
       </div>
     );
   }
@@ -133,3 +136,7 @@ class App extends React.Component {
 
 export default App;
 
+
+// Repsonsive 
+// Suggestions 
+// Dynamic -> Background Color -> Animations
