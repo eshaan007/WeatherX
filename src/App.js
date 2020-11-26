@@ -83,7 +83,7 @@ class App extends React.Component {
     // When city is entered, the data is fetched and retrieved from the OpenWeatherAPI
     if (city) {
       const api_call = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api_Key}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api_Key}`
       );
 
       // The response received is stored in the form of Standard JSON format 

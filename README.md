@@ -5,6 +5,7 @@
 - Developed this App to search Weather Conditions in **ANY CITY**. 
 - Used OpenWeatherAPI's functionality and integrated it into ReactJS. 
 - Beautified using *Bootstrap CSS Framework*.
+- Deployed it on Vercel ➡ https://weatherx.vercel.app/
 
 ### Installation Guide
 1. Open the terminal or git bash on your PC.
