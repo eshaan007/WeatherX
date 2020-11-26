@@ -7,11 +7,11 @@
 
 .container input,
 .container ::-webkit-input-placeholder {
-  color: black !important;
+  color: rgb(238, 238, 238) !important;
 }
 .container input:focus {
   background-color: transparent;
-  color: rgb(0, 0, 0);
+  color: rgb(251, 251, 251);
   box-shadow: none !important;
   border: none;
 }

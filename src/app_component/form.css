@@ -3,9 +3,9 @@ form {
 }
 
 form input[name="city"]{
-  color:black;
+  background-color: transparent;
+  color: black;
   border: none;
-  border-bottom: 2px solid rgb(36, 35, 35);
+  border-bottom: 2px solid rgb(255, 255, 255);
   border-radius: 0;
 }
-

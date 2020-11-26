@@ -42,7 +42,7 @@ class App extends React.Component {
   get_WeatherIcon(icons, rangeId) {
     switch (true) {
       case rangeId >= 200 && rangeId < 232:
-        this.setState({ icon: icons.Thunderstorm });
+        this.setState({icon: icons.Thunderstorm});
         break;
       case rangeId >= 300 && rangeId <= 321:
         this.setState({ icon: icons.Drizzle });
