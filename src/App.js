@@ -41,7 +41,7 @@ class App extends React.Component {
   // Switch statements specified to get the specific icon for that specific weather condition 
   get_WeatherIcon(icons, rangeId) {
     switch (true) {
-      case rangeId >= 200 && rangeId < 232:
+      case rangeId >= 200 && rangeId <= 232:
         this.setState({icon: icons.Thunderstorm});
         break;
       case rangeId >= 300 && rangeId <= 321:
